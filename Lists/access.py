@@ -1,0 +1,3 @@
+# Accessing Elemnents in a List using the index.
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[0].title())
