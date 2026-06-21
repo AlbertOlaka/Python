@@ -39,6 +39,7 @@ removed_guest = guest_list.pop(2)
 print(f'I am so sorry {removed_guest}, but I can only invite two people for dinner')
 
 print(f'\n{guest_list[0]} and {guest_list[1]} are still invited to the dinner party!')
+print(len(guest_list))
 
 del guest_list[0:2]
 print(f'\n{guest_list}')
