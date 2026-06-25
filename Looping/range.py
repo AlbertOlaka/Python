@@ -18,7 +18,7 @@ for value in range(1, 11):
     squares.append(square)
 print(squares)
 
-# More concisely way to do it.
+# More concise way to do it.
 squares = []
 for value in range(1, 11):
     squares.append(value**2)
