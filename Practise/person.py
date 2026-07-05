@@ -27,15 +27,18 @@ print(f"Max's favourite number is {favourite_number['max']}")
 
 # Exercise 6.3
 glossary = {
-    'python' : 'A high level language used for backend development and AI engineering.',
-    'c' : 'A low level language used for systems programming and hardware interaction.',
-    'html' : 'A markup language used for structuring content on the web.',
-    'javascript' : 'A frontend language used to make web pages interactive.',
-    'c#' : 'A low level language developed by Microsoft for application development.',
+    'variables' : 'A label that you can assign a value.',
+    'comments' : 'Used to write something the programmer does not want to run.',
+    'method' : 'An action Python can perform on a piece of data.',
+    'string' : 'A series of characters.',
+    'whitespace' : 'Refers to any non-printing characters such as, spaces, tabs or end of line symbols.',
+    'syntax' : 'Occurs when python does not recognize a section of your program as valid python code.',
+    'constants' : 'This is a variable whose value stays the same throughout the life of a program.',
+    'arbitary numbers' : 'Is a value or variable chosen without a specific rule,pattern or underlyig formular.',
+    'list' : 'It is a collection of items in a particular order.',
+    'reverse method' : 'The methos reverses the original order of a list.'
 }
 
-print(f"Python:\n\t{glossary['python']}")
-print(f"C:\n\t{glossary['c']}")
-print(f"HTML:\n\t{glossary['html']}")
-print(f"Javascript:\n\t{glossary['javascript']}")
-print(f"C#:\n\t{glossary['c#']}")
+for key, value in glossary.items():
+    print(f"\nKey: {key.title()}")
+    print(f"Value: {value}")
