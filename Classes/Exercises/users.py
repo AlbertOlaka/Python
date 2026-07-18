@@ -27,6 +27,20 @@ class User:
         """Reseting login attempts to zero."""
         self.login_attempts = 0
 
+class Privileges:
+    """A simple attemp to model privileges for admin."""
+
+class Admin(User):
+    def __init__(self, first_name, last_name, email, phone_number, privileges):
+        """Initialize attributes of the parent class."""
+        super().__init__(first_name, last_name, email, phone_number)
+        self.privileges = privileges
+
+    def show_priveleges(self):
+        """Print a statement displaying the admins privileges."""
+        for privilege in self.privileges:
+            print(f"- {privilege}")
+
 user = User('Willie', 'John', 'wjohn@gmail.com', 123456)
 user.describe_user()
 user.greet_user()
@@ -42,9 +56,10 @@ user.read_login()
 user.read_login()
 
 
-# user_1 = User('Lucy', 'Jow', 'ljow@gmail.com', 987655)
-# user_1.describe_user()
-# user_1.greet_user()
+user_1 = Admin ('Lucy', 'Jow', 'ljow@gmail.com', 987655, ['can add post', 'can delete post', 'can ban user'])
+user_1.describe_user()
+user_1.show_priveleges()
+user_1.greet_user()
 
 # user_2 = User('Jane', 'Joe', 'jj@gmail.com', 876554)
 # user_2.describe_user()
