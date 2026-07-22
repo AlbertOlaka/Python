@@ -1,0 +1,5 @@
+In Python you can use json to store data more efficiently.
+In Python you can use a for loop when working with lists.
+In Python you can use if statements when working with dictionaries.
+In Python you can read into a file.
+In Python you can write to a file.
